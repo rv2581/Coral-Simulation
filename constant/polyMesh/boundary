@@ -1,0 +1,53 @@
+FoamFile
+{
+	version	2.0;
+	format	ascii;
+	class	polyBoundaryMesh;
+	location	"constant/polyMesh";
+	object	boundary;
+}
+7
+(
+	top
+	{
+		type	patch;
+		startFace	331690;
+		nFaces	232;
+	}
+	bottom
+	{
+		type	patch;
+		startFace	331922;
+		nFaces	226;
+	}
+	symmetry
+	{
+		type	patch;
+		startFace	332148;
+		nFaces	199;
+	}
+	right
+	{
+		type	patch;
+		startFace	332347;
+		nFaces	214;
+	}
+	outlet
+	{
+		type	patch;
+		startFace	332561;
+		nFaces	292;
+	}
+	inlet
+	{
+		type	patch;
+		startFace	332853;
+		nFaces	196;
+	}
+	coral_gen
+	{
+		type	wall;
+		startFace	333049;
+		nFaces	12571;
+	}
+)

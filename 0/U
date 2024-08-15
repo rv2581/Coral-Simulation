@@ -1,0 +1,46 @@
+FoamFile
+{
+	version	2.0;
+	format	binary;
+	class	volVectorField;
+	location	"0";
+	object	U;
+	arch	"LSB;label=32;scalar=64";
+}
+dimensions	[0 1 -1 0 0 0 0];
+internalField	uniform (0 0 0);
+boundaryField
+{
+	top
+	{
+		type	slip;
+	}
+	bottom
+	{
+		type	fixedValue;
+		value	uniform (5 0 0);
+	}
+	symmetry
+	{
+		type	pressureInletOutletVelocity;
+		value	uniform (0 0 0);
+	}
+	right
+	{
+		type	slip;
+	}
+	outlet
+	{
+		type	pressureInletOutletVelocity;
+		value	uniform (0 0 0);
+	}
+	inlet
+	{
+		type	surfaceNormalFixedValue;
+		refValue	uniform -5;
+	}
+	coral_gen
+	{
+		type	noSlip;
+	}
+}

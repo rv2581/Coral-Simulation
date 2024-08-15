@@ -1,0 +1,10 @@
+{
+  "file-series-version" : "1.0",
+  "files" : [
+    { "name" : "coral_1_0.vtm", "time" : 0 },
+    { "name" : "coral_1_3990.vtm", "time" : 3990 },
+    { "name" : "coral_1_4000.vtm", "time" : 4000 },
+    { "name" : "coral_1_9990.vtm", "time" : 9990 },
+    { "name" : "coral_1_10000.vtm", "time" : 10000 }
+  ]
+}

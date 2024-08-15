@@ -1,0 +1,81 @@
+FoamFile
+{
+	version	2.0;
+	format	binary;
+	class	dictionary;
+	location	"system";
+	object	changeDictionaryDict;
+}
+p
+{
+	boundaryField
+	{
+		top
+		{
+			type	zeroGradient;
+		}
+		bottom
+		{
+			type	zeroGradient;
+		}
+		symmetry
+		{
+			type	totalPressure;
+			p0	uniform 0;
+			gamma	0;
+		}
+		right
+		{
+			type	zeroGradient;
+		}
+		outlet
+		{
+			type	fixedValue;
+			value	uniform 0;
+		}
+		inlet
+		{
+			type	zeroGradient;
+		}
+		coral_gen
+		{
+			type	zeroGradient;
+		}
+	}
+}
+U
+{
+	boundaryField
+	{
+		top
+		{
+			type	slip;
+		}
+		bottom
+		{
+			type	surfaceNormalFixedValue;
+			refValue	uniform -0;
+		}
+		symmetry
+		{
+			type	pressureInletOutletVelocity;
+		}
+		right
+		{
+			type	slip;
+		}
+		outlet
+		{
+			type	pressureInletOutletVelocity;
+		}
+		inlet
+		{
+			type	surfaceNormalFixedValue;
+			refValue	uniform -5;
+		}
+		coral_gen
+		{
+			type	noSlip;
+		}
+	}
+}

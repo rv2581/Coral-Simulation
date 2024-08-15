@@ -1,0 +1,122 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _70874860-20230612 OPENFOAM=2212 patch=230612 version=2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /lib/openfoam/openfoam2212/platforms/linux64GccDPInt32Opt/bin/changeDictionary -noFunctionObjects -latestTime
+Date   : Jul 30 2024
+Time   : 11:55:40
+Host   : saferoboticslab-ASUS
+PID    : 30279
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 505
+    PWD is not the cwd() - reverting to physical description
+I/O    : uncollated
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 505
+    PWD is not the cwd() - reverting to physical description
+Case   : /home/riyashi/SimFlow-Workspaces/Workspace-3vffi1/My_Cases/coral_1/coral_1
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Overriding OptimisationSwitches according to controlDict
+    fileHandler (unregistered)
+    fileModificationSkew 0;
+
+    maxMasterFileBufferSize 1e+09;
+
+    maxThreadFileBufferSize 1e+09;
+
+    mpiBufferSize (unregistered)
+Create mesh for time = 10000
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 2(p U)
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 7(top bottom symmetry right outlet inlet coral_gen)
+Replacing entries in dictionary p
+Loading dictionary p
+Loaded dictionary p with entries 3(dimensions internalField boundaryField)
+Merging entries from 1(boundaryField)
+Writing modified fieldDict p
+Replacing entries in dictionary U
+Loading dictionary U
+Loaded dictionary U with entries 3(dimensions internalField boundaryField)
+Merging entries from 1(boundaryField)
+Writing modified fieldDict U
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _70874860-20230612 OPENFOAM=2212 patch=230612 version=2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /lib/openfoam/openfoam2212/platforms/linux64GccDPInt32Opt/bin/pimpleFoam
+Date   : Jul 30 2024
+Time   : 11:55:40
+Host   : saferoboticslab-ASUS
+PID    : 30281
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 505
+    PWD is not the cwd() - reverting to physical description
+I/O    : uncollated
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 505
+    PWD is not the cwd() - reverting to physical description
+Case   : /home/riyashi/SimFlow-Workspaces/Workspace-3vffi1/My_Cases/coral_1/coral_1
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Overriding OptimisationSwitches according to controlDict
+    fileHandler (unregistered)
+    fileModificationSkew 0;
+
+    maxMasterFileBufferSize 1e+09;
+
+    maxThreadFileBufferSize 1e+09;
+
+    mpiBufferSize (unregistered)
+Create mesh for time = 10000
+
+Selecting dynamicFvMesh staticFvMesh
+
+PIMPLE: Operating solver in PISO mode
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+Creating MRF zone list from MRFProperties
+Creating finite volume options from "system/fvOptions"
+
+No finite volume options present
+Courant Number mean: 70.30854 max: 1617.894
+Courant Number mean: 70.30854 max: 1617.894
+
+Starting time loop
+
+End
+

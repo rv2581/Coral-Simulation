@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<!-- time='10000' -->
+<VTKFile type='vtkMultiBlockDataSet' version='1.0' byte_order='LittleEndian' header_type='UInt64'>
+  <vtkMultiBlockDataSet>
+    <DataSet name='internal' file='coral_1_10000/internal.vtu' />
+    <Block name='boundary'>
+      <DataSet name='top' file='coral_1_10000/boundary/top.vtp' />
+      <DataSet name='bottom' file='coral_1_10000/boundary/bottom.vtp' />
+      <DataSet name='symmetry' file='coral_1_10000/boundary/symmetry.vtp' />
+      <DataSet name='right' file='coral_1_10000/boundary/right.vtp' />
+      <DataSet name='outlet' file='coral_1_10000/boundary/outlet.vtp' />
+      <DataSet name='inlet' file='coral_1_10000/boundary/inlet.vtp' />
+      <DataSet name='coral_gen' file='coral_1_10000/boundary/coral_gen.vtp' />
+    </Block>
+  </vtkMultiBlockDataSet>
+  <FieldData>
+    <DataArray type='Float32' Name='TimeValue' NumberOfTuples='1' format='ascii'>
+10000
+    </DataArray>
+  </FieldData>
+</VTKFile>
